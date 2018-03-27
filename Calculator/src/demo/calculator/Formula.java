@@ -13,4 +13,5 @@ public interface Formula {
 	Formula lParen();
 	Formula rParen();
 	BigDecimal evaluate(Map<String, BigDecimal> context);
+	String print(Map<String, BigDecimal> context);
 }
