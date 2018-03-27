@@ -1,5 +1,8 @@
 package demo.calculator;
 
+import java.math.BigDecimal;
+import java.util.Map;
+
 public interface Formula {
 
 	Formula value(String key);
@@ -9,5 +12,5 @@ public interface Formula {
 	Formula subtract();
 	Formula lParen();
 	Formula rParen();
-	
+	BigDecimal evaluate(Map<String, BigDecimal> context);
 }
